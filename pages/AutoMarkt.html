@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AutoMarkt</title>   
+</head>
+<body>
+    <div>
+        <h1>Поиск по предпочтениям</h1>
+        <form  action="https://fom.in.ua/echo" method="post">
+            <fieldset>
+                <legend>Виды кузова</legend>
+                <label for="MICRO">Микро</label>
+                <input id="MICRO"  name="Car_styles" type="checkbox" value="MICRO">
+                <label for="SEDAN">Седан</label>
+                <input id="SEDAN"  name="Car_styles" type="checkbox" value="SEDAN">
+                <label for="HATCHBACK">Хетчбек</label>
+                <input id="HATCHBACK"  name="Car_styles" type="checkbox" value="HATCHBACK">
+                <label for="MINIVAN">Минивен</label>
+                <input id="MINIVAN"  name="Car_styles" type="checkbox" value="MINIVAN">
+                <label for="CABRIOLET">Кабриолет</label>
+                <input id="CABRIOLET"  name="Car_styles" type="checkbox" value="CABRIOLET">
+                <label for="COUPE">Купе</label>
+                <input id="COUPE"  name="Car_styles" type="checkbox" value="COUPE">
+                <label for="ROADSTER">Родстер</label>
+                <input id="ROADSTER"  name="Car_styles" type="checkbox" value="ROADSTER">
+                <label for="SUPERCAR">Суперкар</label>
+                <input id="SUPERCAR"  name="Car_styles" type="checkbox" value="SUPERCAR">
+                <label for="PICKUP">Пикап</label>
+                <label for="LIMOUSINE">Лимузин</label>
+                <input id="LIMOUSINE"  name="Car_styles" type="checkbox" value="LIMOUSINE">
+                <label for="CAMPERVAN">Кемперван</label>
+                <input id="CAMPERVAN"  name="Car_styles" type="checkbox" value="CAMPERVAN">
+                <label for="TRUCK">Джип</label>
+                <input id="TRUCK"  name="Car_styles" type="checkbox" value="TRUCK">    
+            </fieldset>
+            <fieldset>
+                <legend>Марка Авто</legend>
+                <select name="Car_brand">
+                    <option value="BMW">BMW</option>
+                    <option value="Toyota">Toyota</option>
+                    <option value="Peugeot">Peugeot</option>
+                    <option value="Mitsubishi">Mitsubishi</option>
+                    <option value="Lexus">Lexus</option>
+                    <option value="Infinity">Infinity</option>
+                    <option value="Ford">Ford</option>
+                    <option value="Chevrolet">Chevrolet</option>
+                    <option value="Volvo">Volvo</option>
+                    <option value="Skoda">Skoda</option>
+                    <option value="Opel">Opel</option>
+                    <option value="Mercedes Benz">Mercedes Benz</option>
+                    <option value="LADA">LADA</option>
+                    <option value="Hyundai">Hyundai</option>
+                    <option value="Fiat">Fiat</option>
+                    <option value="Audi">Audi</option>
+                    <option value="Volkswagen">Volkswagen</option>
+                    <option value="Renault">Renault</option>
+                    <option value="Nissan">Nissan</option>
+                    <option value="Mazda">Mazda</option>
+                    <option value="KIA">KIA</option>
+                    <option value="Honda">Honda</option>
+                    <option value="Citroen">Citroen</option>
+                    <option value="Alfa Romeo">Alfa Romeo</option>   
+                </select>
+            </fieldset>
+            <fieldset>
+                <legend>Страна производства</legend>
+                <select name="Producing_country">
+                    <option value="China">Китай</option>
+                    <option value="USA">США</option>
+                    <option value="Japan">Япония</option>
+                    <option value="India">Индия</option>
+                    <option value="Germany">Германия</option>
+                    <option value="Brazil">Бразилия</option>
+                    <option value="Spain">Испания</option> 
+                </select>
+            </fieldset>
+            <fieldset>
+                <legend>Цена</legend>
+                <br>от
+                <span>0$</span><input type="range" id="Price" name="Price" min="0" max="100000" value="90" step="100" />
+                <label for="Price">100000грн</label>
+                <br>до
+                <span>0$</span><input type="range" id="Price" name="Price" min="0" max="100000" value="90" step="100" />
+                <label for="Price">100000грн</label>
+            </fieldset>
+            <fieldset>
+                <legend>Год производства</legend>
+                <br>from
+                <span>2000г.</span><input type="range" id="Year_of_car" name="Year_of_car" min="2000" max="2024" value="90"  />
+                <label for="Year_of_car">2024г.</label>
+                <br>to
+                <span>2000г.</span><input type="range" id="Year_of_car" name="Year_of_car" min="2000" max="2024" value="90"  />
+                <label for="Year_of_car">2024г.</label>
+            </fieldset>
+            <fieldset>
+                <legend>Состояние Авто</legend>
+                <label for="Used">Б/у</label>
+                <input id="Used"  name="Car_condition" type="checkbox" value="Used">
+                <label for="New">Новая</label>
+                <input id="New"  name="Car_condition" type="checkbox" value="New">
+                <label for="credit">В кредит(</label>
+                <input id="credit"  name="Car_condition" type="checkbox" value="credit">
+            </fieldset>
+            <fieldset>
+                <legend>Тип топлива</legend>
+                <label for="Petrol">Бензин</label>
+                <input id="Petrol"  name="Fuel_type" type="checkbox" value="Petrol">
+                <label for="Electric">ЭлектроКар</label>
+                <input id="Electric"  name="Fuel_type" type="checkbox" value="Electric">
+                <label for="Gas">Газ</label>
+                <input id="Gas"  name="Fuel_type" type="checkbox" value="Gas">
+                <label for="Diesel">Дизель</label>
+                <input id="Diesel"  name="Fuel_type" type="checkbox" value="Diesel">
+            </fieldset>
+            <fieldset>
+                <legend>Тип коробки передач</legend>
+                <label for="Manual">Механика</label>
+                <input id="Manual"  name="Gearbox_type" type="checkbox" value="Manual">
+                <label for="Automatic">Автомат</label>
+                <input id="Automatic"  name="Gearbox_type" type="checkbox" value="Automatic">
+
+            </fieldset>
+            <fieldset>
+                <legend>Цвет</legend>
+                <label for="Color"></label>
+                <input type="Color" name="Color" id="Color">
+            </fieldset>
+            <fieldset>
+                <legend>Комфорт</legend>
+                <label for="Luke">Люк</label>
+                <input id="Luke"  name="Comfort" type="checkbox" value="Luke">
+                <label for="Leather_salon">Кожаный салон</label>
+                <input id="Leather_salon"  name="Comfort" type="checkbox" value="Leather_salon">
+            </fieldset>
+                
+            <button type="submit"> Поиск </button>
+        </form>  
+    </div>
+</body>
+</html>

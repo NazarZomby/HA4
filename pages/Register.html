@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+</head>
+<body>
+    <div>
+    <h1>Регистрация</h1>
+        <form  action="https://fom.in.ua/echo" method="post" >
+            <fieldset >
+                <legend>Условия пользователя</legend>
+                <input  type="radio" required name="User_Terms" value="Agree">
+                <span>Принять Условия пользователя ?</span>
+            </fieldset>
+            <fieldset>
+                <label for="Email">Email</label>
+                <input id="Email" name="email" type="email" placeholder="Enter email" required>
+            </fieldset>
+            <fieldset>
+                <label for="password">Пароль</label>
+                <input id="password" name="password" type="password" placeholder="Enter password" required>
+            </fieldset>
+            <fieldset>
+                <label for="Password_confirmation">Повторить пароль</label>
+                <input id="Password_confirmation name="Password_confirmation" type="password" placeholder="Enter password" required>
+            </fieldset>
+            <fieldset>
+                <legend>Выберете гендер</legend>
+                <label>
+                    <input type="radio" name="gender" value="Male">
+                    <span>Мужчина</span>
+                </label>
+                <label>
+                    <input type="radio" name="gender" value="Femail">
+                    <span>Женщина</span>
+                </label>
+                <label>
+                    <input type="radio" name="gender" value="Non-binary">
+                    <span>Что-то между</span>
+                </label>
+            </fieldset>
+            <button type="submit"> Дальше </button>
+        </form>
+    </div>  
+</body>
+<a href="./AutoMarkt.html">Продолжить как гость</a>
+</html>
